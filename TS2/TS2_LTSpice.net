@@ -12,8 +12,9 @@ R6 N002 N005 1k
 R3 N002 N001 10k
 V1 N007 0 AC 1
 .include opamp.sub
-.ac dec 1000 100u 1k
+.ac dec 1000 {0.01*f} {100*f}
 * Vin
 * Vo
+.param f= 1/2*PI
 .backanno
 .end
