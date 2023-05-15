@@ -1,0 +1,14 @@
+Version 4
+SymbolType BLOCK
+LINE Normal 16 -24 -17 -24
+LINE Normal 16 0 -17 0
+LINE Normal 16 23 -17 23
+LINE Normal 0 23 16 23
+LINE Normal 0 49 0 23
+LINE Normal 0 -48 0 -24
+PIN 0 -48 LEFT 8
+PINATTR PinName P1
+PINATTR SpiceOrder 1
+PIN 0 48 LEFT 8
+PINATTR PinName GND
+PINATTR SpiceOrder 2
