@@ -94,8 +94,8 @@ for N in range(1,9):
     att = 10*np.log10(1+(eps**2)*C_nn)    
     print('alpha_{:d} = {:3.3f} dB'.format(N,att))
 
-#num = [1]
-#den = [-16*eps**2, 0, -24*eps**2, 0, -9*eps**2, 0, 1]
+# num = [1]
+# den = [-16*eps**2, 0, -24*eps**2, 0, -9*eps**2, 0, 1]
 
 # a = 1/(16*eps**2)
 # b = 3/2
@@ -104,12 +104,27 @@ for N in range(1,9):
 # num = [a]
 # den = [-1, 0, -b, 0, -c, 0, a]
 
-#print(np.roots(den))
+# print(np.roots(den))
     
-    
-    
-    
-    
-    
+"""
+k = 256*eps**2
+a = 640*eps**2/k
+b = 560*eps**2/k  
+c = 200*eps**2/k    
+d = 25*eps**2/k
+e = 1/k
+
+num = [e]
+den = [1, 0, -a, 0, b, 0, -c, 0, d, 0, e]  
+print(np.roots(den))   
+this_sos = tf2sos_analog(num, den)
+pretty_print_SOS(this_sos)
+"""
+
+z,p,k = sig.cheb1ap(5, alfa_max)
+num, den = sig.zpk2tf(z,p,k)
+this_sos = tf2sos_analog(num, den)
+#pretty_print_SOS(this_sos)
+analyze_sys(this_sos)
     
     
