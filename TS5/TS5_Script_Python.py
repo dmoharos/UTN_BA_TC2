@@ -85,7 +85,6 @@ Omega_s2= Q*(omega_s2**2-1)/omega_s2
 # Desestimamos el signo (-) por ser |T_LP| una función par
 Omega_s1= -Omega_s1
 
-
 eps = calculoEpsilonFiltro(alfa_max)
 eps_2 = round(eps**2, 4)
 
@@ -107,5 +106,5 @@ den_T_lp= np.poly([p_T_lp for p_T_lp in p_T_lp if p_T_lp.real < 0])
 
 num_T_bp, den_T_bp= sig.lp2bp(num_T_lp, den_T_lp, omega_0, bw= 1/Q)
 T_bp_sos = tf2sos_analog(num_T_bp, den_T_bp)
-analyze_sys(T_bp_sos, sys_name='Filtro pasa banda Chevyshev orden 3')
+analyze_sys(T_bp_sos)#, sys_name='BPF Chevyshev Order 3')
 
