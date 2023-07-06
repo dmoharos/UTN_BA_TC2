@@ -1,0 +1,18 @@
+* C:\Users\David\Desktop\UTN\4°\TC2\UTN_BA_TC2\TS5\TS5_LTSpice_Red_Pasiva_SOS_3.asc
+V3 Vin_3 0 AC 1
+R3 Vout_3 Vin_3 {R}
+C3 Vout_3 0 {C}
+L3 Vout_3 0 {L}
+.ac dec 1000 {w0/2/pi/100} {w0/2/pi*100}
+.lib opamp.sub
+.param Q= 15.9558
+.param ww= 1
+.param w0= 0.9031*ww
+.param C= 1
+.param wz= C
+.param R= {Q/wz/w0}
+.param L= {1/wz/w0**2}
+#.param= 2*pi*22e3
+#.param C= 1/wz/ww
+.backanno
+.end
