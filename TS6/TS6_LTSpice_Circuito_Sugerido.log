@@ -1,0 +1,24 @@
+Circuit: * C:\Users\David\Desktop\UTN\4°\TC2\UTN_BA_TC2\TS6\TS6_LTSpice_Circuito_Sugerido.asc
+
+Ignoring empty pin current: Ix(u22:1)
+Ignoring empty pin current: Ix(u22:2)
+Ignoring empty pin current: Ix(u21:1)
+Ignoring empty pin current: Ix(u21:2)
+Ignoring empty pin current: Ix(u12:1)
+Ignoring empty pin current: Ix(u12:2)
+
+Date: Sun Jul 09 16:49:13 2023
+Total elapsed time: 0.484 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 0
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 9
+fillins = 11
+solver = Normal
+
