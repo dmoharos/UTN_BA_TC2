@@ -229,6 +229,6 @@ print(' ')
 print('-- Módulo, fase, diagrama de polos y ceros y retardo de fase --')
 print(' ')
 
-analyze_sys(t_hp, sys_name='Filtro pasa alto Chevyshev 2do orden')
+analyze_sys(t_hp, sys_name='High Pass Filter Chevyshev Order 2')
 
 #-------------------------------------------------------------------------------------------------------------------#

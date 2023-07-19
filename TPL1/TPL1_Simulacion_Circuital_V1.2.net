@@ -1,0 +1,35 @@
+* C:\Users\David\Desktop\UTN\4°\TC2\UTN_BA_TC2\TPL1\TPL1_Simulacion_Circuital_V1.2.asc
+RF2 N003 Vo_BP 36.3k
+R2 Vo_HP N001 50k
+RF1 N002 Vo_HP 36.3k
+C1 Vo_BP N002 1000p
+R4 Vo_BP N004 50k
+C2 Vo_LP N003 1000p
+R1 Vo_LP N001 50k
+RG N001 Vin 56k
+Vin Vin 0 AC 1
+RQ N004 0 28.3k
+R NC N004 50k
+XU4 N004 N001 V+ V- Vo_HP level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+XU5 0 N002 V+ V- Vo_BP level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+XU6 0 N003 V+ V- Vo_LP level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+V1 V+ 0 15
+V2 0 V- 15
+* Filtro de Variables de estado para UAF42
+* 2
+* 3
+* 12
+* 13
+* 8
+* 7
+* 14
+* 1
+* 11
+.ac dec 1000 {w0/2/pi/10000} {w0/2/pi*10000}
+.inc opamp.sub
+.param wp= 2*pi*4600
+.param Ww= wp
+.param w0= 0.9523*Ww
+.lib UniversalOpAmp1.lib
+.backanno
+.end
