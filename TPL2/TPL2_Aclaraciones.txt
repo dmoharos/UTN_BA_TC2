@@ -1,0 +1,21 @@
+Aclarar que usamos fs = 44 kHz en lugar de 40 kHz como dice el enunciado...
+
+Vin = 1 Vp
+Voffset = 1,6 V
+
+Verificar att del generador
+  0 Auto
+> 1 0 dB
+  2 20 dB
+  ...
+
+Verificar ajuste de tensión del osciloscopio
+> x 1
+
+Talkthrough
+FIR Equirriple
+FIR Least Squares
+FIR Equirriple Fase 
+
+// IIR Butterworth
+Probar con a2=0 y b2=0
