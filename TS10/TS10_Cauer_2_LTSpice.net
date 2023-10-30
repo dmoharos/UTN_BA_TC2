@@ -1,0 +1,9 @@
+* C:\Users\David\Desktop\UTN\4°\TC2\UTN_BA_TC2\TS10\TS10_Cauer_2_LTSpice.asc
+L1 N002 0 {5/4}
+L2 N003 0 5
+C1 N002 N001 {2/3}
+C2 N003 N002 {2/25}
+V1 N001 0 AC 1 0
+.ac dec 1000 {1e-4} {1e3}
+.backanno
+.end

@@ -1,0 +1,10 @@
+* C:\Users\David\Desktop\UTN\4°\TC2\UTN_BA_TC2\TS10\TS10_Remocion_Parcial_LTSpice.asc
+C2 N003 N002 2
+C3 N004 N002 {1/3}
+L2 0 N003 {1/2}
+L3 0 N004 1
+V1 N001 0 AC 1 0
+C1 N002 N001 1
+.ac dec 1000 {1e-4} {1e3}
+.backanno
+.end

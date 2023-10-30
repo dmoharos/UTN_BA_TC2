@@ -1,0 +1,20 @@
+Circuit: * C:\Users\David\Desktop\UTN\4°\TC2\UTN_BA_TC2\TS10\TS10_Remocion_Parcial_LTSpice.asc
+
+WARNING: Node N002 is floating.
+
+
+Date: Mon Oct 30 11:25:16 2023
+Total elapsed time: 0.411 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 0
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 5
+fillins = 0
+solver = Normal
+
